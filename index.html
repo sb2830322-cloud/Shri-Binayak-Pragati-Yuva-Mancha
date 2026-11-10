@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123a61">
+  <meta name="description" content="Sri Binayak Pragati Yuvamancha, Gilajodi — community service, youth development and cultural activities.">
+  <title>Sri Binayak Pragati Yuvamancha | Gilajodi</title>
+  <style>
+    :root{--navy:#123a61;--blue:#1d5d8f;--gold:#f2b84b;--ink:#183047;--muted:#607487;--paper:#f5f8fb;--white:#fff;--line:#e1e9f0;--red:#b72f38}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Oriya","Noto Sans",sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+    a{color:inherit;text-decoration:none} button{font:inherit;cursor:pointer}
+    .top{background:#0c2c49;color:#eaf3fa;text-align:center;padding:7px 14px;font-size:12px;letter-spacing:.3px}
+    header{background:var(--white);position:sticky;top:0;z-index:10;box-shadow:0 2px 12px #102b4510}
+    .navwrap{max-width:1120px;margin:auto;padding:12px 18px;display:flex;align-items:center;gap:14px}
+    .brand{display:flex;align-items:center;gap:11px;min-width:0;flex:1}
+    .logo{width:48px;height:48px;border-radius:15px;background:linear-gradient(145deg,var(--navy),var(--blue));display:grid;place-items:center;color:var(--gold);font-size:25px;flex:none}
+    .brand strong{display:block;font-size:14px;line-height:1.25;color:var(--navy)}
+    .brand small{font-size:11px;color:var(--muted);letter-spacing:1.1px}
+    .lang{border:1px solid var(--line);background:white;color:var(--navy);border-radius:10px;padding:8px 10px;font-weight:700}
+    .hero{background:radial-gradient(circle at 85% 15%,#ffffff20,transparent 25%),linear-gradient(125deg,#0d2d4b,#1e5c89);color:white;overflow:hidden}
+    .hero-inner{max-width:1120px;margin:auto;padding:58px 20px 62px;display:grid;grid-template-columns:1.35fr .65fr;gap:25px;align-items:center}
+    .eyebrow{color:#ffd985;text-transform:uppercase;font-size:12px;font-weight:800;letter-spacing:2px}
+    h1{font-size:clamp(31px,5vw,53px);line-height:1.12;margin:13px 0 16px;max-width:720px}
+    .hero p{color:#e4edf5;max-width:650px;margin:0 0 24px}
+    .actions{display:flex;flex-wrap:wrap;gap:11px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 17px;border-radius:11px;font-weight:800;border:1px solid transparent}
+    .primary{background:var(--gold);color:#26364a}.outline{border-color:#ffffff80;color:white;background:#ffffff0c}
+    .hero-mark{width:min(240px,100%);aspect-ratio:1;border:1px solid #ffffff30;border-radius:50%;margin:auto;display:grid;place-items:center;background:radial-gradient(circle,#ffffff15,transparent 67%);font-size:100px;color:#ffdc91}
+    .section{max-width:1120px;margin:auto;padding:48px 20px}
+    .section-head{margin-bottom:22px}.section-head small{color:var(--blue);font-weight:900;letter-spacing:1.5px;text-transform:uppercase}
+    h2{margin:5px 0 7px;color:var(--navy);font-size:clamp(24px,3vw,33px);line-height:1.2}
+    .lead{color:var(--muted);margin:0;max-width:720px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:white;border:1px solid var(--line);border-radius:17px;padding:21px;box-shadow:0 8px 24px #163a5710}
+    .card .ico{width:43px;height:43px;border-radius:13px;background:#eaf2f8;display:grid;place-items:center;font-size:22px;margin-bottom:12px}
+    .card h3{margin:0 0 7px;color:var(--navy);font-size:18px}.card p{margin:0;color:var(--muted);font-size:14px}
+    .band{background:#eaf1f7}.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .notice{border-left:4px solid var(--gold);background:white;border-radius:12px;padding:17px 18px}
+    .notice strong{color:var(--navy)}.notice p{margin:5px 0 0;color:var(--muted);font-size:14px}
+    .event-tag{display:inline-block;font-size:11px;font-weight:900;color:#8a5a00;background:#fff3d6;padding:4px 8px;border-radius:99px;margin-bottom:9px}
+    .event-card{min-height:150px}
+    .event-card .date{color:var(--blue);font-weight:800;font-size:12px}
+    .cta{background:linear-gradient(120deg,#123a61,#1d5d8f);color:white;border-radius:20px;padding:28px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .cta h2{color:white;margin:0 0 6px}.cta p{color:#dce9f4;margin:0}
+    .cta .btn{background:var(--gold);color:#25364a;white-space:nowrap}
+    .smallprint{font-size:12px;color:var(--muted);margin-top:14px}
+    footer{background:#0c2c49;color:#d9e5ef;padding:30px 20px}
+    .foot{max-width:1120px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    footer strong{color:white}footer p{font-size:13px;margin:5px 0;color:#b9cad9}
+    .links{display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+    .hidden{display:none!important}
+    @media(max-width:760px){.hero-inner{grid-template-columns:1fr;padding:43px 20px}.hero-mark{display:none}.grid{grid-template-columns:1fr}.two{grid-template-columns:1fr}.section{padding:38px 17px}.cta{display:block}.cta .btn{margin-top:17px}.brand strong{font-size:12px}.logo{width:42px;height:42px}}
+  </style>
+</head>
+<body>
+  <div class="top" data-en="A community initiative from Gilajodi, Odisha" data-or="ଓଡ଼ିଶାର ଗିଲାଯୋଡ଼ିରୁ ଏକ ସାମାଜିକ ପ୍ରୟାସ">A community initiative from Gilajodi, Odisha</div>
+  <header>
+    <div class="navwrap">
+      <a class="brand" href="#home" aria-label="Home">
+        <div class="logo" aria-hidden="true">✦</div>
+        <div><strong data-en="SRI BINAYAK PRAGATI YUVAMANCHA" data-or="ଶ୍ରୀ ବିନାୟକ ପ୍ରଗତି ଯୁବମଞ୍ଚ">SRI BINAYAK PRAGATI YUVAMANCHA</strong><small>GILAJODI · ODISHA</small></div>
+      </a>
+      <button class="lang" id="languageToggle" type="button" aria-label="Change language">ଓଡ଼ିଆ</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow" data-en="Unity · Service · Progress" data-or="ଏକତା · ସେବା · ପ୍ରଗତି">Unity · Service · Progress</div>
+          <h1 data-en="Together for a stronger community." data-or="ଏକ ସୁଦୃଢ଼ ସମାଜ ଗଠନ ପାଇଁ ଆମେ ଏକାଠି।">Together for a stronger community.</h1>
+          <p data-en="We are a community youth platform from Gilajodi, working to encourage social welfare, cultural activities, youth participation and mutual support." data-or="ଆମେ ଗିଲାଯୋଡ଼ିର ଏକ ସାମାଜିକ ଯୁବମଞ୍ଚ। ସମାଜ କଲ୍ୟାଣ, ସାଂସ୍କୃତିକ କାର୍ଯ୍ୟକ୍ରମ, ଯୁବଶକ୍ତିର ଅଂଶଗ୍ରହଣ ଓ ପରସ୍ପର ସହଯୋଗକୁ ପ୍ରୋତ୍ସାହିତ କରିବା ଆମର ଉଦ୍ଦେଶ୍ୟ।">We are a community youth platform from Gilajodi, working to encourage social welfare, cultural activities, youth participation and mutual support.</p>
+          <div class="actions">
+            <a class="btn primary" href="#join" data-en="Become a Member" data-or="ସଦସ୍ୟ ହୁଅନ୍ତୁ">Become a Member</a>
+            <a class="btn outline" href="#activities" data-en="Explore Our Work" data-or="ଆମ କାର୍ଯ୍ୟକଳାପ ଦେଖନ୍ତୁ">Explore Our Work</a>
+          </div>
+        </div>
+        <div class="hero-mark" aria-hidden="true">ॐ</div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-head"><small data-en="Who we are" data-or="ଆମ ପରିଚୟ">Who we are</small><h2 data-en="About the Organization" data-or="ଆମ ସଂଗଠନ ବିଷୟରେ">About the Organization</h2>
+        <p class="lead" data-en="Sri Binayak Pragati Yuvamancha, Gilajodi aims to bring people together through service, cooperation and positive community initiatives." data-or="ଶ୍ରୀ ବିନାୟକ ପ୍ରଗତି ଯୁବମଞ୍ଚ, ଗିଲାଯୋଡ଼ି ସେବା, ସହଯୋଗ ଓ ସକାରାତ୍ମକ ସାମାଜିକ ପ୍ରୟାସ ମାଧ୍ୟମରେ ଲୋକଙ୍କୁ ଏକତ୍ର କରିବାକୁ ଲକ୍ଷ୍ୟ ରଖିଛି।">Sri Binayak Pragati Yuvamancha, Gilajodi aims to bring people together through service, cooperation and positive community initiatives.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><div class="ico">🤝</div><h3 data-en="Social Welfare" data-or="ସାମାଜିକ କଲ୍ୟାଣ">Social Welfare</h3><p data-en="Encouraging mutual help, community participation and support for people in need." data-or="ପରସ୍ପର ସହଯୋଗ, ସାମାଜିକ ଅଂଶଗ୍ରହଣ ଓ ଅସହାୟ ଲୋକଙ୍କୁ ସହାୟତା ପ୍ରଦାନ।">Encouraging mutual help, community participation and support for people in need.</p></article>
+        <article class="card"><div class="ico">🎭</div><h3 data-en="Culture & Festivals" data-or="ସଂସ୍କୃତି ଓ ପର୍ବପର୍ବାଣୀ">Culture & Festivals</h3><p data-en="Organizing Ganesh Puja, cultural gatherings and community celebrations." data-or="ଗଣେଶ ପୂଜା, ସାଂସ୍କୃତିକ ସମାବେଶ ଓ ସାମୂହିକ ଉତ୍ସବ ଆୟୋଜନ।">Organizing Ganesh Puja, cultural gatherings and community celebrations.</p></article>
+        <article class="card"><div class="ico">🌱</div><h3 data-en="Youth & Environment" data-or="ଯୁବ ବିକାଶ ଓ ପରିବେଶ">Youth & Environment</h3><p data-en="Promoting youth talent, tree plantation and environmental awareness." data-or="ଯୁବ ପ୍ରତିଭାର ବିକାଶ, ବୃକ୍ଷରୋପଣ ଓ ପରିବେଶ ସଚେତନତା।">Promoting youth talent, tree plantation and environmental awareness.</p></article>
+      </div>
+    </section>
+
+    <section class="band" id="activities">
+      <div class="section">
+        <div class="section-head"><small data-en="What we do" data-or="ଆମର କାର୍ଯ୍ୟ">What we do</small><h2 data-en="Our Activities" data-or="ଆମର କାର୍ଯ୍ୟକଳାପ">Our Activities</h2></div>
+        <div class="grid">
+          <article class="card"><div class="ico">🩸</div><h3 data-en="Blood Donation Awareness" data-or="ରକ୍ତଦାନ ସଚେତନତା">Blood Donation Awareness</h3><p data-en="Supporting voluntary blood donation awareness and coordination with authorized blood banks." data-or="ସ୍ୱେଚ୍ଛାକୃତ ରକ୍ତଦାନ ସଚେତନତା ଏବଂ ଅଧିକୃତ ରକ୍ତଭଣ୍ଡାର ସହ ସମନ୍ୱୟ।">Supporting voluntary blood donation awareness and coordination with authorized blood banks.</p></article>
+          <article class="card"><div class="ico">🌳</div><h3 data-en="Tree Plantation" data-or="ବୃକ୍ଷରୋପଣ">Tree Plantation</h3><p data-en="Taking small local steps for a cleaner and greener environment." data-or="ପରିଷ୍କାର ଓ ସବୁଜ ପରିବେଶ ପାଇଁ ସ୍ଥାନୀୟ ସ୍ତରରେ ପ୍ରୟାସ।">Taking small local steps for a cleaner and greener environment.</p></article>
+          <article class="card"><div class="ico">🎉</div><h3 data-en="Community Events" data-or="ସାମୁଦାୟିକ କାର୍ଯ୍ୟକ୍ରମ">Community Events</h3><p data-en="Bringing neighbors together through festivals, meetings and cultural programs." data-or="ପର୍ବପର୍ବାଣୀ, ବୈଠକ ଓ ସାଂସ୍କୃତିକ କାର୍ଯ୍ୟକ୍ରମରେ ପଡ଼ୋଶୀମାନଙ୍କୁ ଏକତ୍ର କରିବା।">Bringing neighbors together through festivals, meetings and cultural programs.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="events">
+      <div class="section-head"><small data-en="Stay informed" data-or="ସୂଚନା ପାଆନ୍ତୁ">Stay informed</small><h2 data-en="Events & Announcements" data-or="କାର୍ଯ୍ୟକ୍ରମ ଓ ଘୋଷଣା">Events & Announcements</h2><p class="lead" data-en="Official event dates and announcements will be published here by the organization." data-or="ସଂଗଠନ ପକ୍ଷରୁ ଅଧିକୃତ କାର୍ଯ୍ୟକ୍ରମ ତାରିଖ ଓ ଘୋଷଣା ଏଠାରେ ପ୍ରକାଶ କରାଯିବ।">Official event dates and announcements will be published here by the organization.</p></div>
+      <div class="two">
+        <article class="card event-card"><span class="event-tag" data-en="Annual celebration" data-or="ବାର୍ଷିକ ଉତ୍ସବ">Annual celebration</span><h3 data-en="Ganesh Puja" data-or="ଗଣେଶ ପୂଜା">Ganesh Puja</h3><p data-en="Event details will be announced soon. Please check this page for updates." data-or="କାର୍ଯ୍ୟକ୍ରମର ବିବରଣୀ ଶୀଘ୍ର ଘୋଷଣା କରାଯିବ। ଅପଡେଟ୍ ପାଇଁ ଏହି ପୃଷ୍ଠା ଦେଖନ୍ତୁ।">Event details will be announced soon. Please check this page for updates.</p></article>
+        <article class="card event-card"><span class="event-tag" data-en="Community initiative" data-or="ସାମାଜିକ ପ୍ରୟାସ">Community initiative</span><h3 data-en="Social Service Programs" data-or="ସାମାଜିକ ସେବା କାର୍ଯ୍ୟକ୍ରମ">Social Service Programs</h3><p data-en="Upcoming service activities and volunteer opportunities will be listed here." data-or="ଆଗାମୀ ସେବାମୂଳକ କାର୍ଯ୍ୟକ୍ରମ ଓ ସ୍ୱେଚ୍ଛାସେବୀ ସୁଯୋଗ ଏଠାରେ ଦିଆଯିବ।">Upcoming service activities and volunteer opportunities will be listed here.</p></article>
+      </div>
+    </section>
+
+    <section class="band" id="join">
+      <div class="section">
+        <div class="cta"><div><h2 data-en="Be part of the change." data-or="ପରିବର୍ତ୍ତନର ଅଂଶ ହୁଅନ୍ତୁ।">Be part of the change.</h2><p data-en="Interested in volunteering or becoming a member? Contact the organization." data-or="ସ୍ୱେଚ୍ଛାସେବୀ କିମ୍ବା ସଦସ୍ୟ ହେବାକୁ ଇଚ୍ଛୁକ କି? ସଂଗଠନ ସହ ଯୋଗାଯୋଗ କରନ୍ତୁ।">Interested in volunteering or becoming a member? Contact the organization.</p></div><a class="btn" href="#contact" data-en="Contact Us" data-or="ଯୋଗାଯୋଗ କରନ୍ତୁ">Contact Us</a></div>
+        <p class="smallprint" data-en="Online membership and blood donor forms will be activated after the organization configures its official, access-controlled forms and privacy notice." data-or="ସଂଗଠନର ଅଧିକୃତ, ନିୟନ୍ତ୍ରିତ ଫର୍ମ ଓ ଗୋପନୀୟତା ସୂଚନା ପ୍ରସ୍ତୁତ ହେବା ପରେ ଅନଲାଇନ୍ ସଦସ୍ୟତା ଓ ରକ୍ତଦାତା ଫର୍ମ ଚାଲୁ କରାଯିବ।">Online membership and blood donor forms will be activated after the organization configures its official, access-controlled forms and privacy notice.</p>
+      </div>
+    </section>
+
+    <section class="section" id="blood">
+      <div class="section-head"><small data-en="Give the gift of life" data-or="ଜୀବନର ଉପହାର ଦିଅନ୍ତୁ">Give the gift of life</small><h2 data-en="Blood Donor Interest" data-or="ରକ୍ତଦାତା ହେବା ପାଇଁ ଆଗ୍ରହ">Blood Donor Interest</h2>
+        <p class="lead" data-en="We plan to provide a secure voluntary donor registration form. Donor details will never be displayed publicly. Blood donation eligibility is assessed by an authorized blood bank." data-or="ଆମେ ଏକ ସୁରକ୍ଷିତ ସ୍ୱେଚ୍ଛାକୃତ ରକ୍ତଦାତା ପଞ୍ଜୀକରଣ ଫର୍ମ ଆରମ୍ଭ କରିବାକୁ ଯୋଜନା କରୁଛୁ। ରକ୍ତଦାତାଙ୍କ ବ୍ୟକ୍ତିଗତ ତଥ୍ୟ ସାର୍ବଜନୀନ କରାଯିବ ନାହିଁ। ରକ୍ତଦାନ ଯୋଗ୍ୟତା ଅଧିକୃତ ରକ୍ତଭଣ୍ଡାର ନିର୍ଦ୍ଧାରଣ କରିବ।">We plan to provide a secure voluntary donor registration form. Donor details will never be displayed publicly. Blood donation eligibility is assessed by an authorized blood bank.</p>
+      </div>
+      <div class="notice"><strong data-en="Registration form coming soon" data-or="ପଞ୍ଜୀକରଣ ଫର୍ମ ଶୀଘ୍ର ଆସୁଛି">Registration form coming soon</strong><p data-en="Please contact the organization for now. Do not send medical or personal details through public comments or social media." data-or="ବର୍ତ୍ତମାନ ପାଇଁ ସଂଗଠନ ସହ ଯୋଗାଯୋଗ କରନ୍ତୁ। ସାର୍ବଜନୀନ ମନ୍ତବ୍ୟ କିମ୍ବା ସୋସିଆଲ୍ ମିଡିଆରେ ଚିକିତ୍ସା କିମ୍ବା ବ୍ୟକ୍ତିଗତ ତଥ୍ୟ ପଠାନ୍ତୁ ନାହିଁ।">Please contact the organization for now. Do not send medical or personal details through public comments or social media.</p></div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-head"><small data-en="Get in touch" data-or="ଯୋଗାଯୋଗ">Get in touch</small><h2 data-en="Contact the Organization" data-or="ସଂଗଠନ ସହ ଯୋଗାଯୋଗ କରନ୍ତୁ">Contact the Organization</h2><p class="lead" data-en="Gilajodi, Block Basta, District Balasore, Odisha, India." data-or="ଗିଲାଯୋଡ଼ି, ବ୍ଲକ୍ ବସ୍ତା, ଜିଲ୍ଲା ବାଲେଶ୍ୱର, ଓଡ଼ିଶା, ଭାରତ।">Gilajodi, Block Basta, District Balasore, Odisha, India.</p></div>
+      <div class="notice"><strong data-en="Official contact details to be added" data-or="ଅଧିକୃତ ଯୋଗାଯୋଗ ବିବରଣୀ ଯୋଡ଼ାଯିବ">Official contact details to be added</strong><p data-en="Add the organization’s approved public phone number and email address before publishing this website." data-or="ଏହି ୱେବସାଇଟ୍ ପ୍ରକାଶ କରିବା ପୂର୍ବରୁ ସଂଗଠନର ଅନୁମୋଦିତ ସାର୍ବଜନୀନ ଫୋନ୍ ନମ୍ବର ଓ ଇମେଲ୍ ଠିକଣା ଯୋଡ଼ନ୍ତୁ।">Add the organization’s approved public phone number and email address before publishing this website.</p></div>
+    </section>
+  </main>
+
+  <footer><div class="foot"><div><strong>SRI BINAYAK PRAGATI YUVAMANCHA</strong><p>Gilajodi, Odisha, India</p><p data-en="Community service · Youth development · Cultural activities" data-or="ସମାଜ ସେବା · ଯୁବ ବିକାଶ · ସାଂସ୍କୃତିକ କାର୍ଯ୍ୟକଳାପ">Community service · Youth development · Cultural activities</p></div><div class="links"><a href="#about" data-en="About" data-or="ପରିଚୟ">About</a><a href="#activities" data-en="Activities" data-or="କାର୍ଯ୍ୟକଳାପ">Activities</a><a href="#events" data-en="Events" data-or="କାର୍ଯ୍ୟକ୍ରମ">Events</a><a href="#contact" data-en="Contact" data-or="ଯୋଗାଯୋଗ">Contact</a></div><p>© <span id="year"></span> Sri Binayak Pragati Yuvamancha. <span data-en="All rights reserved." data-or="ସମସ୍ତ ଅଧିକାର ସଂରକ୍ଷିତ।">All rights reserved.</span></p></div></footer>
+
+  <script>
+    let currentLanguage = "en";
+    const toggle = document.getElementById("languageToggle");
+    toggle.addEventListener("click", () => {
+      currentLanguage = currentLanguage === "en" ? "or" : "en";
+      document.documentElement.lang = currentLanguage === "or" ? "or" : "en";
+      document.querySelectorAll("[data-en][data-or]").forEach(el => {
+        el.textContent = el.dataset[currentLanguage];
+      });
+      toggle.textContent = currentLanguage === "en" ? "ଓଡ଼ିଆ" : "English";
+    });
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
